@@ -91,12 +91,12 @@ const [count, accountId] = tuple;
 console.log(`${accountId} has ${count.toNumber()} values`);
 ```
 
-When making a call that expect a `Tuple` input, pass it as an array, so to pass the example above into a call, it would be `.call([123, '5GrwvaEF5zXb26Fz9rcQpDWS57CtERHpNehXCPcNoHGKutQY'])`
+When making a call that expects a `Tuple` input, pass it as an array, so to pass the example above into a call, it would be `.call([123, '5GrwvaEF5zXb26Fz9rcQpDWS57CtERHpNehXCPcNoHGKutQY'])`
 
 
 ## Boolean values
 
-All `bool` values are returned as nomal JS `Boolean` objects, i.e. they extend the [JS Boolean](https://www.w3schools.com/jsref/jsref_obj_boolean.asp) to allow it to be used as a `Codec` type. 
+All `bool` values are returned as nomal JS `Boolean` objects, i.e. they extend the [JS Boolean](https://www.w3schools.com/jsref/jsref_obj_boolean.asp) to allow it to be used as a `Codec` type.
 
 In addition to the default `getValue()` on the JS Boolean and the default interfaces explained above, two additional getters have been added for ease-of-use. These are `isTrue` and `isFalse` that will just return a normal JS primitive `boolean` for a quick check without using `getValue()`.
 

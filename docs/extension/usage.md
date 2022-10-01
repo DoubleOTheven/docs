@@ -17,7 +17,7 @@ const allInjected = await web3Enable('my cool dapp');
 // meta.source contains the name of the extension that provides this account
 const allAccounts = await web3Accounts();
 
-// the address we use to use for signing, as injected
+// the address we want to use for signing, as injected
 const SENDER = '5DTestUPts3kjeXSTMyerHihn1uwMfLj8vU8sqF7qYrFabHE';
 
 // finds an injector for an address

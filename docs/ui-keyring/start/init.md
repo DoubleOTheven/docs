@@ -78,7 +78,7 @@ In addition to the `ss58Format` and `type` options (both optional), the followin
 
 - `filter?: (json: KeyringJson) => boolean` - An optional filter that is executed on account loading. This allows us to check the loaded account and apply rules on it before including it in the keyring. Generally this would be used for advanced cases, any account that is filtered with `false` won't appear.
 
-- `genesisHash?: Hash` - The `genesisHash` of accounts to should be loaded. The meta property of the account _may_ contain a `genesisHash`, when both are available and non-matching, the account will not be included. To populate this option, the easiest way is to pass the `api.genesisHash` property.
+- `genesisHash?: Hash` - The `genesisHash` of accounts to be loaded. The meta property of the account _may_ contain a `genesisHash`, when both are available and non-matching, the account will not be included. To populate this option, the easiest way is to pass the `api.genesisHash` property.
 
 - `isDevelopment?: boolean` - This flag, when set to `true` loads the keyring in development mode. This means that the default development accounts such as "Alice", "Bob", ..., "Ferdie" are included in the keyring. Generally you would only specify this when  actually connected to a development chain.
 
